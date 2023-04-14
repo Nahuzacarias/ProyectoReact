@@ -50,14 +50,13 @@ setTimeout(()=>{
     })
 }
 
-export const getproductcategory =(category) =>{
+export const getproductcategory =(cat) =>{
 
     return new Promise ((resolve)=>{
 
 setTimeout(()=>{
 
-    resolve(products.filter(cat=>cat.category === category))
-    console.log()
+    resolve(products.filter(cate=>cate.category === cat))
 },500)
 
     })

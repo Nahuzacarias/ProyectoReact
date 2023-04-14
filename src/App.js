@@ -12,8 +12,8 @@ const App = () => {
         <NavBar />
         <Routes>
         <Route exact path= "/" element ={<ItemListContainer greeting= {"Bienvenidos a mi Tienda"}/>} />
-        <Route exact path= "/category/:categoryid" element ={<ItemListContainer/>} />
-        <Route exact path= "/item/:itemid" element = {<ItemDetailContainer/>}/>
+        <Route exact path= "/category/:categoryId" element ={<ItemListContainer/>} />
+        <Route exact path= "/item/:itemID" element = {<ItemDetailContainer/>}/>
         <Route exact path= "/item/" element = {<ItemDetail/>}/>
         <Route path ="*" element = {<h1>404 NOT FOUND</h1>}/>
         </Routes>

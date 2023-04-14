@@ -16,7 +16,7 @@ function NavBar() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                    <Nav.Link href="#home">INICIO</Nav.Link>
+                    <Link to ="/">  <Nav.Link href="#home">INICIO</Nav.Link></Link>
                    <Link to =""> <Nav.Link>ACERCA DE NOSOTROS</Nav.Link></Link>
                         <NavDropdown title="CATEGORÍAS" id="basic-nav-dropdown">
                         <Link to ={`/category/aros`}>     <NavDropdown.Item href="#action/3.1">AROS</NavDropdown.Item></Link>

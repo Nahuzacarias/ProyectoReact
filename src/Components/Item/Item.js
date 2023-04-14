@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 
-const Item = ({ id, name, img, price, description, }) => {
+const Item = ({ id, name, img, price, description,category }) => {
     return (
         <Card className="card1 card2" style={{ width: "19rem" }}>
             <Card.Img variant="top" src={img} />
