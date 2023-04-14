@@ -1,0 +1,22 @@
+.card1{
+
+    display: flex;
+justify-content:space-between;
+align-content: center;
+display: inline-block;
+margin-top: 5rem;
+}
+
+.card2{
+
+
+    width: 15rem;
+
+}
+
+.color3{
+
+    font-size: 2rem;
+    color: #7a0e40;
+
+}
