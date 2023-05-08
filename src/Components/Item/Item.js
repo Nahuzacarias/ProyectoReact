@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 
-const Item = ({ id, name, img, price, description,category }) => {
+const Item = ({ id, name, img, price, description }) => {
     return (
         <Card className="card1 card2" style={{ width: "19rem" }}>
             <Card.Img variant="top" src={img} />
@@ -12,6 +12,7 @@ const Item = ({ id, name, img, price, description,category }) => {
                 <Card.Text className="color3">{price}</Card.Text>
                 <Card.Text>{description}</Card.Text>
                 <Link to={`/item/${id}`}> <Button variant="primary">Ver Detalles</Button></Link>
+                
             </Card.Body>
         </Card>
     );

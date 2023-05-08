@@ -1,25 +1,46 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
+
+import { CartContext } from "../Context/CartContext.js";
 import "./ItemDetail.css"
 import ItemCount from "../ItemCount/ItemCount.js"
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
 
-function ItemDetail({id,name,img,category,description,price,stock,}) {
+function ItemDetail({id,name,img,description,price,stock,quantity}) {
+  const [quantityAdded, setQuantityAaded] = useState(0)
+  const {addItem} = useContext(CartContext)
+
+const Agregar  =  (quantity) =>{
+
+  setQuantityAaded(quantity)
+}
+const item ={
+
+  id,name,price
+}
+ addItem(item,quantity)
+
   return (
    
 
-    <Card style={{ width: '18rem' }}>
-      <Card.Img  variant="top" src={img} />
+    <Card className="detail card1" >
+      <Card.Img className='detail2' variant="top" src={img} />
       <Card.Body>
         <Card.Title>{name}</Card.Title>
         <Card.Text>
+          <div>
+          {price}
+          </div>
           {description}
         </Card.Text>
        
-      </Card.Body>
+      </Card.Body>  
 
-      <ItemCount initial={5} stock= {stock} onAdd={(quantity) => console.log ("cantidad agregada")}/>
+      
+  {quantityAdded > 0 ? (<Link to = "/cart">Terminar compra</Link>):( <ItemCount  initial={5} stock= {stock} onAdd={Agregar} />)}
     </Card>
-    
+
+
   );
 }
 

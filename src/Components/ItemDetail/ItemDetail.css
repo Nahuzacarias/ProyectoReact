@@ -1,0 +1,22 @@
+
+
+.card1{
+
+    display: flex;
+justify-content:space-between;
+align-content: center;
+display: inline-block;
+margin-top: 5rem;
+width: 25rem;
+
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+  z-index: 1;
+  
+}
+
+.card1:hover { 
+    transform: scale(1.2);
+    position: relative;
+  z-index: 2;
+}

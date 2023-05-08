@@ -1,0 +1,7 @@
+.ItemDetailContainer{
+
+display: flex;
+justify-content: flex-end;
+min-height: 100vh;
+
+}

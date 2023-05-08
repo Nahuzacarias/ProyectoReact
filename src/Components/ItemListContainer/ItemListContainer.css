@@ -1,5 +1,13 @@
 .color4{
 
-    background-color: rgba(179, 75, 179, 0.315);
-    height: 80rem
+    background-image: url(../../assets/background.png);
+    height: 80rem;
+    background-size:cover
+}
+
+.h1{
+
+font-size: 3rem;
+    font-family: 'Dancing Script', cursive;
+    color: white;
 }
