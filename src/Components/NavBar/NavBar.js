@@ -8,7 +8,7 @@ import Cartwidget from "../Cartwidget/Cartwidget"
 import {Link} from "react-router-dom"
 import Brand from "../../assets/logo.png"
 
-function NavBar({quantity}) {
+function NavBar() {
     return ( 
         <Navbar className="color1" expand="lg">
          <Link to ="/"><img src={Brand}  className="d-inline-block align-top logo"  alt="logo de dips"/></Link>  

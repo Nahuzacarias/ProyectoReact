@@ -2,8 +2,8 @@ import React from "react";
 import { useState, useEffect } from "react";
 import ItemDetail from "../ItemDetail/ItemDetail.js"
 import { useParams } from "react-router-dom";
-import "./ItemDetailContainer.css"
-import {getDoc,doc} from "firebase/firestore"
+import "./ItemDetailContainer.css";
+import { getDoc, doc } from "firebase/firestore";
 import {db} from "../FirebaseReact/config.js"
 
 
@@ -17,7 +17,7 @@ const ItemDetailContainer = () => {
     useEffect(() => {
         setLoading(true)
 
-        const docRef =doc(db,"products",itemID)
+        const docRef =doc(db,"Items",itemID)
         getDoc(docRef)
         .then(response=>{
             const data=response.data()
@@ -30,7 +30,7 @@ const ItemDetailContainer = () => {
     }, [itemID]);
     
     return (
-        <div clasName="ItemDetailContainer">
+        <div >
 {product? <ItemDetail {...product} />
              : <div class="spinner-border text-danger mt-5" role="status">
              <span class="visually-hidden">Loading...</span>

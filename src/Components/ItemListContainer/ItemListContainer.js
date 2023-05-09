@@ -7,7 +7,7 @@ import {getDocs,collection,query,where} from "firebase/firestore"
 import {db} from "../FirebaseReact/config.js"
 
 
-export const ItemListContainer = ({ greeting}) => {
+export const ItemListContainer = ({greeting}) => {
 
   const [products, setProducts] = useState([])
   const [loading,setLoading] = useState(true)
@@ -18,8 +18,8 @@ export const ItemListContainer = ({ greeting}) => {
 
     setLoading(true)
 
-    const collectionRef = categoryId ? query(collection(db,"products"),where("category","==",categoryId))
-    : collection (db,"products")
+    const collectionRef = categoryId ? query(collection(db,"Items"),where("category","==",categoryId))
+    : collection (db,"Items")
 
 getDocs(collectionRef)
 

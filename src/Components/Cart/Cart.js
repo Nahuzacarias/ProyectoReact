@@ -21,8 +21,6 @@ return(
   return (
     <div>
 
-
-
 {cart.map(p=><CartItem key={p.id}{...p}/>) }
 
 <h3>Total: ${total}</h3>
