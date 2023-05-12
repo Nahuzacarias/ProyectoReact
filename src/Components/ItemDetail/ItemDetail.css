@@ -6,8 +6,8 @@
 justify-content:space-between;
 align-content: center;
 display: inline-block;
-margin-top: 5rem;
-width: 25rem;
+margin-top: 3rem;
+width: 15rem;
 
     transition: transform 0.2s ease-in-out;
     position: relative;
@@ -15,8 +15,13 @@ width: 25rem;
   
 }
 
-.card1:hover { 
-    transform: scale(1.2);
-    position: relative;
-  z-index: 2;
+.card3:hover { 
+  transform: scale(1.2);
+  position: relative;
+z-index: 2;
+}
+
+.violet1{
+
+  background-color: rgba(150, 60, 235, 0.438);
 }

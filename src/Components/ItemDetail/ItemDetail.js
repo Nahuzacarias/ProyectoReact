@@ -21,13 +21,13 @@ const item ={
 
   return (
   
-    <Card className="detail card1" >
+    <Card className="detail card1 violet1" >
       <Card.Img className='detail2' variant="top" src={img} />
       <Card.Body>
         <Card.Title>{name}</Card.Title>
         <Card.Text>
           <div>
-          {price}
+          ${price}
           </div>
           {description}
         </Card.Text>
@@ -35,7 +35,7 @@ const item ={
       </Card.Body>  
 
       
-  {quantityAdded > 0 ? (<Link to = "/cart">Terminar compra</Link>):( <ItemCount  initial={5} stock= {10} onAdd={Agregar} />)}
+  {quantityAdded > 0 ? (<Link to = "/cart">Terminar compra</Link>):( <ItemCount initial={1} stock= {10} onAdd={Agregar} />)}
     </Card>
 
 

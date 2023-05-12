@@ -1,0 +1,13 @@
+.itemcarrito{
+
+    border-collapse: collapse;
+    font-size: 13px;
+    font-family: Proxima Nova,-apple-system,Roboto,Arial,sans-serif;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-color: rgba(68, 13, 90, 0.637);
+    border-style: solid;
+    margin-top: 2px;
+}

@@ -21,7 +21,9 @@ return(
   return (
     <div>
 
-{cart.map(p=><CartItem key={p.id}{...p}/>) }
+
+{cart.map(p => <CartItem key={p.id} {...p} quantity={p.quantity} />)}
+
 
 <h3>Total: ${total}</h3>
 <button onClick={()=>clearCart()} >Limpiar carrito</button>

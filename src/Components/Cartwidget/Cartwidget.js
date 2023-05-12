@@ -13,7 +13,7 @@ return(
 <Link to ="/cart">
 <div className="carrito">
 
-<img src={require("../../assets/carrito.png")}
+<img src={require("../../Assets/carrito.png")}
 alt="icono carrito"/>
 <p className="cero">{totalQuantity}</p>
 

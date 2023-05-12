@@ -7,6 +7,7 @@ import ItemDetailContainer from "./Components/ItemDetailContainer/ItemDetailCont
 import ItemDetail from "./Components/ItemDetail/ItemDetail"
 import { CartProvider } from './Components/Context/CartContext';
 import Cart from "./Components/Cart/Cart.js"
+import Checkout from './Components/Checkout/Checkout';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route exact path= "/item/" element = {<ItemDetail/>}/>
         <Route path ="*" element = {<h1>404 NOT FOUND</h1>}/>
         <Route path="/cart" element ={<Cart/>}></Route>
+        <Route path="/checkout" element ={<Checkout/>}></Route>
         </Routes>
         </CartProvider>
       </div>

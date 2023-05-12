@@ -30,12 +30,12 @@ const ItemDetailContainer = () => {
     }, [itemID]);
     
     return (
-        <div >
+        <>
 {product? <ItemDetail {...product} />
              : <div class="spinner-border text-danger mt-5" role="status">
              <span class="visually-hidden">Loading...</span>
            </div>}
-        </div>
+           </>
     );
 
 };
