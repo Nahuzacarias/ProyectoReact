@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import { useContext } from 'react'
 import { CartContext } from '../Context/CartContext.js'
 import CartItem from '../CartItem/CartItem.js'
+import Button from 'react-bootstrap/Button';
+
 
 const Cart = () => {
     const {cart,clearCart,totalQuantity,total} = useContext(CartContext)
@@ -26,9 +28,8 @@ return(
 
 
 <h3>Total: ${total}</h3>
-<button onClick={()=>clearCart()} >Limpiar carrito</button>
-<Link to ="/checkout">Checkout</Link>
-
+<Button variant="outline-danger" onClick={()=>clearCart()}>Limpiar carrito</Button>{' '}
+<Button as={Link} to="/checkout"variant="success">Success</Button>{' '}
 
     </div>
   )
